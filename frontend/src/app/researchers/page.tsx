@@ -123,7 +123,7 @@ export default function ResearchersPage() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div className="card-3d p-6">
             <div className="flex items-center gap-3">
               <div className="rounded-lg bg-blue-50 p-3 text-blue-600">
                 <Users size={21} />
@@ -137,7 +137,7 @@ export default function ResearchersPage() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div className="card-3d p-6">
             <div className="flex items-center gap-3">
               <div className="rounded-lg bg-purple-50 p-3 text-purple-600">
                 <BookOpen size={21} />
@@ -152,7 +152,7 @@ export default function ResearchersPage() {
           </div>
         </div>
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <section className="card-3d p-6">
           <div className="grid gap-4 md:grid-cols-3">
 
             <div className="relative md:col-span-1">
@@ -224,7 +224,7 @@ export default function ResearchersPage() {
             {filteredResearchers.map((researcher) => (
               <article
                 key={researcher.id}
-                className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-md"
+                className="card-3d p-6 flex flex-col justify-between"
               >
                 <div className="flex items-start justify-between">
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-100 to-purple-100 text-blue-700">

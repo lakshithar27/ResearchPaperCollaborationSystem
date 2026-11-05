@@ -120,7 +120,7 @@ export default function CitationsPage() {
           </p>
         </div>
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <section className="card-3d p-6">
           <div className="mb-5">
             <h2 className="text-lg font-bold text-slate-900">
               Select a Research Paper
@@ -192,7 +192,7 @@ export default function CitationsPage() {
           <Loading message="Exploring citation relationships..." />
         ) : network ? (
           <>
-            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <section className="card-3d p-6">
               <div className="flex items-center gap-3">
                 <div className="rounded-xl bg-blue-100 p-3 text-blue-700">
                   <BookOpen size={24} />
@@ -223,7 +223,7 @@ export default function CitationsPage() {
             </section>
 
             <section className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="card-3d p-6">
                 <div className="flex items-center gap-3">
                   <div className="rounded-xl bg-green-100 p-3 text-green-700">
                     <ArrowDownLeft size={22} />
@@ -244,7 +244,7 @@ export default function CitationsPage() {
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="card-3d p-6">
                 <div className="flex items-center gap-3">
                   <div className="rounded-xl bg-purple-100 p-3 text-purple-700">
                     <ArrowUpRight size={22} />
@@ -268,7 +268,7 @@ export default function CitationsPage() {
 
             <section className="grid gap-6 lg:grid-cols-2">
 
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="card-3d p-6">
                 <div className="mb-5 flex items-center gap-2">
                   <ArrowDownLeft className="text-green-600" size={21} />
                   <h2 className="text-lg font-bold text-slate-900">
@@ -301,7 +301,7 @@ export default function CitationsPage() {
                 )}
               </div>
 
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="card-3d p-6">
                 <div className="mb-5 flex items-center gap-2">
                   <ArrowUpRight className="text-purple-600" size={21} />
                   <h2 className="text-lg font-bold text-slate-900">

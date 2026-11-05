@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { FormEvent, useState } from "react";
 import Link from "next/link";
@@ -66,7 +66,7 @@ export default function RegisterPage() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="card-3d p-8">
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">

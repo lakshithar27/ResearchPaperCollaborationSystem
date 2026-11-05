@@ -1,4 +1,4 @@
-﻿import { SearchX } from "lucide-react";
+import { SearchX } from "lucide-react";
 
 export default function EmptyState({
   title = "Nothing found",
@@ -8,12 +8,12 @@ export default function EmptyState({
   description?: string;
 }) {
   return (
-    <div className="flex min-h-64 flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white px-6 py-12 text-center">
-      <div className="mb-4 rounded-full bg-slate-100 p-4">
-        <SearchX size={28} className="text-slate-500" />
+    <div className="flex min-h-64 flex-col items-center justify-center rounded-3xl border border-dashed border-slate-200 bg-white px-6 py-12 text-center card-3d">
+      <div className="mb-4 rounded-2xl bg-slate-100 p-4 shadow-inner">
+        <SearchX size={26} className="text-slate-500" />
       </div>
-      <h3 className="text-lg font-semibold text-slate-800">{title}</h3>
-      <p className="mt-2 max-w-md text-sm text-slate-500">{description}</p>
+      <h3 className="text-base font-bold text-slate-800">{title}</h3>
+      <p className="mt-1.5 max-w-md text-xs text-slate-500">{description}</p>
     </div>
   );
 }

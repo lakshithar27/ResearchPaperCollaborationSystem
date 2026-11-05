@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { FormEvent, useState } from "react";
 import Link from "next/link";
@@ -45,7 +45,7 @@ export default function LoginPage() {
     <main className="flex min-h-screen items-center justify-center bg-slate-50 px-5 py-12">
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
-          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-white">
+          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-md">
             <Microscope size={30} />
           </div>
           <h1 className="text-3xl font-bold text-slate-900">ResearchHub</h1>
@@ -54,7 +54,7 @@ export default function LoginPage() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="card-3d p-8">
           <h2 className="text-2xl font-bold text-slate-900">Welcome back</h2>
           <p className="mt-2 text-sm text-slate-500">
             Sign in to continue your research journey.
@@ -110,11 +110,50 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full rounded-xl bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
+              className="btn-3d w-full rounded-xl bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {loading ? "Signing in..." : "Sign in"}
             </button>
           </form>
+
+          {/* Quick Sign In Buttons for Instant Evaluation */}
+          <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50/70 p-4">
+            <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              Quick Sign In (Click to autofill)
+            </p>
+            <div className="mt-2.5 flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setEmail("mithun123@gmail.com");
+                  setPassword("password123");
+                }}
+                className="rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 shadow-sm hover:border-blue-300 hover:text-blue-600"
+              >
+                Mithun
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setEmail("lakshitha123@gmail.com");
+                  setPassword("password123");
+                }}
+                className="rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 shadow-sm hover:border-blue-300 hover:text-blue-600"
+              >
+                Lakshitha
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setEmail("admin@researchhub.test");
+                  setPassword("admin123");
+                }}
+                className="rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 shadow-sm hover:border-blue-300 hover:text-blue-600"
+              >
+                Admin
+              </button>
+            </div>
+          </div>
 
           <p className="mt-6 text-center text-sm text-slate-500">
             Don&apos;t have an account?{" "}

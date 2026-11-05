@@ -219,7 +219,7 @@ export default function AdminPage() {
               return (
                 <div
                   key={item.label}
-                  className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+                  className="card-3d p-5"
                 >
                   <div className="flex items-center justify-between">
                     <p className="text-sm font-medium text-slate-500">
@@ -240,7 +240,7 @@ export default function AdminPage() {
           </section>
         )}
 
-        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <section className="card-3d overflow-hidden">
 
           <div className="border-b border-slate-100 p-6">
             <h2 className="text-xl font-bold text-slate-900">

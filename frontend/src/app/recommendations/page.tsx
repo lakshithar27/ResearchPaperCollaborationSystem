@@ -100,7 +100,7 @@ export default function RecommendationsPage() {
           <button
             onClick={() => loadRecommendations(true)}
             disabled={loading || refreshing}
-            className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50 disabled:opacity-50"
+            className="btn-3d-light inline-flex items-center justify-center gap-2 px-5 py-3 text-xs font-bold text-slate-800 transition disabled:opacity-50"
           >
             <RefreshCw
               size={17}
@@ -137,7 +137,7 @@ export default function RecommendationsPage() {
         </section>
 
         {/* How it works */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <section className="card-3d p-6">
           <div className="mb-5 flex items-center gap-2">
             <Lightbulb size={20} className="text-amber-500" />
             <h2 className="text-lg font-bold text-slate-900">
@@ -225,7 +225,7 @@ export default function RecommendationsPage() {
                 return (
                   <article
                     key={paper.id}
-                    className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-purple-200 hover:shadow-md"
+                    className="recommend-card-3d p-6"
                   >
                     <div className="flex flex-col justify-between gap-5 sm:flex-row">
 

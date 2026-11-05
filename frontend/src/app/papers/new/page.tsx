@@ -204,7 +204,7 @@ export default function NewPaperPage() {
 
         <form onSubmit={handleSubmit} className="space-y-7">
 
-          <section className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-9">
+          <section className="card-3d p-7 sm:p-9">
             <div className="mb-6 flex items-center gap-3">
               <BookOpen size={21} className="text-blue-600" />
               <h2 className="text-lg font-bold text-slate-900">
@@ -308,7 +308,7 @@ export default function NewPaperPage() {
             </div>
           </section>
 
-          <section className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-9">
+          <section className="card-3d p-7 sm:p-9">
             <div className="mb-5 flex items-center gap-3">
               <Users size={21} className="text-blue-600" />
 
@@ -372,7 +372,7 @@ export default function NewPaperPage() {
             </p>
           </section>
 
-          <section className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-9">
+          <section className="card-3d p-7 sm:p-9">
             <div className="mb-5 flex items-center gap-3">
               <Tag size={21} className="text-purple-600" />
 
@@ -443,7 +443,7 @@ export default function NewPaperPage() {
             <button
               type="submit"
               disabled={submitting || loadingOptions}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-7 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
+              className="btn-3d inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-7 py-3 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {submitting ? (
                 <>

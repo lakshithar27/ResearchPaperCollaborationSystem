@@ -107,7 +107,7 @@ export default function MyResearchPage() {
 
           <Link
             href="/papers/new"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700"
+            className="btn-3d inline-flex items-center justify-center gap-2 px-5 py-3 text-xs font-bold text-white shadow-md"
           >
             <Plus size={18} />
             Add Research Paper
@@ -119,14 +119,14 @@ export default function MyResearchPage() {
         )}
 
         <div className="grid gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div className="card-3d p-6">
             <p className="text-sm text-slate-500">My Publications</p>
             <p className="mt-2 text-3xl font-bold text-slate-900">
               {loading ? "—" : papers.length}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div className="card-3d p-6">
             <p className="text-sm text-slate-500">Total Citations</p>
             <p className="mt-2 text-3xl font-bold text-slate-900">
               {loading
@@ -138,7 +138,7 @@ export default function MyResearchPage() {
             </p>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div className="card-3d p-6">
             <p className="text-sm text-slate-500">Research Topics</p>
             <p className="mt-2 text-3xl font-bold text-slate-900">
               {loading

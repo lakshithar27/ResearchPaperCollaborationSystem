@@ -146,7 +146,7 @@ export default function ProfilePage() {
 
         {profile && (
           <>
-            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <section className="card-3d p-6">
               <div className="flex flex-col items-center gap-4 sm:flex-row">
                 <div className="flex h-20 w-20 items-center justify-center rounded-full bg-blue-100 text-blue-700">
                   <UserCircle size={52} />
@@ -168,7 +168,7 @@ export default function ProfilePage() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <section className="card-3d p-6">
               <div className="mb-6">
                 <h2 className="text-xl font-bold text-slate-900">
                   Personal Information
@@ -294,7 +294,7 @@ export default function ProfilePage() {
               </form>
             </section>
 
-            <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <section className="card-3d p-6">
               <div className="flex items-center gap-3">
                 <div className="rounded-xl bg-green-100 p-3 text-green-700">
                   <ShieldCheck size={23} />

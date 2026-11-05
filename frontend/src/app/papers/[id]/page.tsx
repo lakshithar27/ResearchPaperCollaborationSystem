@@ -69,7 +69,7 @@ function PaperDetailsContent() {
           <ErrorMessage message={error} onRetry={loadPaper} />
         ) : paper ? (
           <>
-            <section className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
+            <section className="research-card-3d p-8 sm:p-10">
               <div className="mb-6 flex items-center gap-3">
                 <div className="rounded-xl bg-blue-50 p-3 text-blue-600">
                   <BookOpen size={25} />
@@ -98,7 +98,7 @@ function PaperDetailsContent() {
               </div>
             </section>
 
-            <section className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm sm:p-9">
+            <section className="card-3d p-8 sm:p-9">
               <h2 className="text-xl font-bold text-slate-900">
                 Abstract
               </h2>
@@ -109,7 +109,7 @@ function PaperDetailsContent() {
             </section>
 
             <section className="grid gap-6 md:grid-cols-2">
-              <div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
+              <div className="card-3d p-7">
                 <div className="flex items-center gap-3">
                   <Users size={21} className="text-blue-600" />
                   <h2 className="text-lg font-bold text-slate-900">
@@ -122,7 +122,7 @@ function PaperDetailsContent() {
                     {paper.authors.map((author) => (
                       <div
                         key={author.id}
-                        className="rounded-xl bg-slate-50 p-4"
+                        className="rounded-2xl bg-slate-50/80 border border-slate-200/70 p-4 transition hover:border-blue-300 hover:bg-white hover:shadow-sm"
                       >
                         <Link
                           href={`/researchers/${author.id}`}
@@ -152,7 +152,7 @@ function PaperDetailsContent() {
                 )}
               </div>
 
-              <div className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
+              <div className="card-3d p-7">
                 <div className="flex items-center gap-3">
                   <Tag size={21} className="text-purple-600" />
                   <h2 className="text-lg font-bold text-slate-900">
