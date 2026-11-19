@@ -62,7 +62,7 @@ The database comes pre-seeded with accounts ready for evaluation and testing:
 *Note: You can also register a new account on the `/register` page at any time.*
 
 
-## 🕸️ Neo4j Graph Database Integration
+##  Neo4j Graph Database Integration
 
 A standalone Cypher script is provided in `researchhub_neo4j.cypher`.
 
@@ -95,7 +95,7 @@ python backend/test_api.py
 
 ---
 
-## 📂 Project Directory Structure
+##  Project Directory Structure
 
 ```text
 mini_project/
