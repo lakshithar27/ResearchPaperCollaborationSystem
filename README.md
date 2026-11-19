@@ -6,7 +6,7 @@ ResearchHub combines a **relational database (MySQL 8.0)**, a **graph knowledge 
 
 ---
 
-## 🏛️ System Architecture
+##  System Architecture
 
 ```mermaid
 graph TD
@@ -32,7 +32,7 @@ graph TD
 
 ---
 
-## 📋 DBMS Level 3 Academic Requirements Checklist
+##  DBMS Level 3 Academic Requirements Checklist
 
 | Requirement | Implementation in ResearchHub | Verification / Location |
 | :--- | :--- | :--- |
@@ -48,7 +48,7 @@ graph TD
 
 ---
 
-## 👥 Demo Accounts
+## Demo Accounts
 
 The database comes pre-seeded with accounts ready for evaluation and testing:
 
@@ -61,40 +61,6 @@ The database comes pre-seeded with accounts ready for evaluation and testing:
 
 *Note: You can also register a new account on the `/register` page at any time.*
 
----
-
-## 🚀 How to Run the Project
-
-### Option A: One-Click Launch (Recommended)
-Double-click `start_all.bat` in the project root. This automatically starts:
-1. **FastAPI Backend** on `http://localhost:8000`
-2. **Next.js Frontend** on `http://localhost:3000`
-
----
-
-### Option B: Manual Launch
-
-#### 1. Initialize the MySQL Database
-```cmd
-init_database.bat
-```
-*(Or execute `researchhub_database.sql` in MySQL Workbench).*
-
-#### 2. Start the Backend
-```cmd
-cd backend
-python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
-* Interactive API Documentation (Swagger UI): **http://localhost:8000/docs**
-
-#### 3. Start the Frontend
-```cmd
-cd frontend
-npm run dev
-```
-* Web Application: **http://localhost:3000**
-
----
 
 ## 🕸️ Neo4j Graph Database Integration
 
@@ -120,7 +86,7 @@ A standalone Cypher script is provided in `researchhub_neo4j.cypher`.
 
 ---
 
-## 🧪 Running Automated Tests
+##  Running Automated Tests
 
 To verify that all 14 API contracts and database triggers are operational:
 ```cmd
